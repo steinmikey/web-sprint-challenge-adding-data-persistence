@@ -1,18 +1,18 @@
 const express = require("express");
-const Project = require("./model");
+const Projects = require("./model");
 
 const router = express.Router();
 
-router.get("/:id", (req, res, next) => {
-  Project.findById(req.params.id)
-    .then((project) => {
-      res.status(200).json(project);
+router.get("/", (req, res, next) => {
+  Projects.getProjects()
+    .then((projects) => {
+      res.status(200).json(projects);
     })
     .catch(next);
 });
 
-router.get("/:id", (req, res, next) => {
-  Project.findById(req.params.id)
+router.post("/", (req, res, next) => {
+  Projects.createProject(req.body)
     .then((project) => {
       res.status(201).json(project);
     })
