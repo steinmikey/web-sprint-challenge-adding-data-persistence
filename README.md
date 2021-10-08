@@ -68,30 +68,30 @@ Build the migration(s) in Knex inside the `data/migrations` folder using appropr
 
 Build an API inside the `api` folder with endpoints for:
 
-- [ ] `[POST] /api/resources`
+- [√] `[POST] /api/resources`
 
   - Example of response body: `{"resource_id":1,"resource_name":"foo","resource_description":null}`
 
-- [ ] `[GET] /api/resources`
+- [√] `[GET] /api/resources`
 
   - Example of response body: `[{"resource_id":1,"resource_name":"foo","resource_description":null}]`
 
-- [ ] `[POST] /api/projects`
+- [√] `[POST] /api/projects`
 
   - Even though `project_completed` is stored as an integer, the API uses booleans when interacting with the client
   - Example of response body: `{"project_id":1,"project_name":"bar","project_description":null,"project_completed":false}`
 
-- [ ] `[GET] /api/projects`
+- [√] `[GET] /api/projects`
 
   - Even though `project_completed` is stored as an integer, the API uses booleans when interacting with the client
   - Example of response body: `[{"project_id":1,"project_name":"bar","project_description":null,"project_completed":false}]`
 
-- [ ] `[POST] /api/tasks`
+- [√] `[POST] /api/tasks`
 
   - Even though `task_completed` is stored as an integer, the API uses booleans when interacting with the client
   - Example of response body: `{"task_id":1,"task_description":"baz","task_notes":null,"task_completed":false,"project_id:1}`
 
-- [ ] `[GET] /api/tasks`
+- [√] `[GET] /api/tasks`
   - Even though `task_completed` is stored as an integer, the API uses booleans when interacting with the client
   - Each task must include `project_name` and `project_description`
   - Example of response body: `[{"task_id":1,"task_description":"baz","task_notes":null,"task_completed":false,"project_name:"bar","project_description":null}]`
@@ -105,10 +105,10 @@ Build an API inside the `api` folder with endpoints for:
 
 ## Submission format
 
-- [ ] Submit via Codegrade by pushing commits to your `main` branch on Github.
-- [ ] Check Codegrade before the deadline to compare its results against your local tests.
-- [ ] Check Codegrade on the days following the Sprint Challenge for reviewer feedback.
-- [ ] New commits will be evaluated by Codegrade if pushed _before_ the sprint challenge deadline.
+- [√] Submit via Codegrade by pushing commits to your `main` branch on Github.
+- [√] Check Codegrade before the deadline to compare its results against your local tests.
+- [√] Check Codegrade on the days following the Sprint Challenge for reviewer feedback.
+- [√] New commits will be evaluated by Codegrade if pushed _before_ the sprint challenge deadline.
 
 ## Interview Questions
 

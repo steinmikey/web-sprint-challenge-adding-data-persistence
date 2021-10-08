@@ -12,7 +12,7 @@ router.get("/", (req, res, next) => {
 });
 
 router.post("/", (req, res, next) => {
-  Tasks.createTask(req.params.id)
+  Tasks.createTask(req.body)
     .then((task) => {
       res.status(201).json(task);
     })
