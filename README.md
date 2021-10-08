@@ -69,20 +69,25 @@ Build the migration(s) in Knex inside the `data/migrations` folder using appropr
 Build an API inside the `api` folder with endpoints for:
 
 - [ ] `[POST] /api/resources`
+
   - Example of response body: `{"resource_id":1,"resource_name":"foo","resource_description":null}`
 
 - [ ] `[GET] /api/resources`
+
   - Example of response body: `[{"resource_id":1,"resource_name":"foo","resource_description":null}]`
 
 - [ ] `[POST] /api/projects`
+
   - Even though `project_completed` is stored as an integer, the API uses booleans when interacting with the client
   - Example of response body: `{"project_id":1,"project_name":"bar","project_description":null,"project_completed":false}`
 
 - [ ] `[GET] /api/projects`
+
   - Even though `project_completed` is stored as an integer, the API uses booleans when interacting with the client
   - Example of response body: `[{"project_id":1,"project_name":"bar","project_description":null,"project_completed":false}]`
 
 - [ ] `[POST] /api/tasks`
+
   - Even though `task_completed` is stored as an integer, the API uses booleans when interacting with the client
   - Example of response body: `{"task_id":1,"task_description":"baz","task_notes":null,"task_completed":false,"project_id:1}`
 
@@ -94,7 +99,7 @@ Build an API inside the `api` folder with endpoints for:
 **Notes:**
 
 - Run tests locally by executing `npm run test`. Tests will be very broken until you flesh out the project sufficiently.
-- You are welcome to create additional files for middlewares etc, but **do not move or rename existing files** or folders.
+- You are welcome to create additional files for middleware etc, but **do not move or rename existing files** or folders.
 - Do not make changes to your `package.json` except to add **additional** dependencies and scripts. Do not update existing packages.
 - In your solution, it is essential that you follow best practices and produce clean and professional results.
 
@@ -110,6 +115,17 @@ Build an API inside the `api` folder with endpoints for:
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. Explain the difference between Relational Databases and SQL.
+
+SQL is the language that most databases are written in. It can perform CRUD operations on a the relational database.
+
 2. Why do tables need a Primary Key?
+
+The primary key provides a consistent, yet unique way of identifying each row in a data table.
+
 3. What is the name given to a table column that references the Primary Key on another table?
+
+A foreign key.
+
 4. What do we need in order to have a _many to many_ relationship between two tables?
+
+A junction table, which has it's own primary key for each relation between the other two tables, utilizing foreign keys to reference their primary keys
